@@ -614,7 +614,7 @@ bool Solver::simplifyLearnt_core()
                 assert(c.size() > 0);
                 afterSize = c.size();
                 
-                if(saved_size !=c.size()){
+                if(saved_size !=c.size() && drup_file){
 
 #ifdef BIN_DRUP
                     binDRUP('a', c , drup_file);
@@ -740,7 +740,7 @@ bool Solver::simplifyLearnt_tier2()
                 assert(c.size() > 0);
                 afterSize = c.size();
                 
-                if(saved_size!=c.size()){
+                if(saved_size!=c.size() && drup_file){
 
 #ifdef BIN_DRUP
                     binDRUP('a', c , drup_file);
